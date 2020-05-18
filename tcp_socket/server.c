@@ -65,7 +65,9 @@ int main(int argc , char **argv)
 			char buff[MAX_LINE];
 			while((n = read(connfd , buff , MAX_LINE)) > 0)
 			{
+				printf("receive:%s",buff);
 				write(connfd , buff , n);
+				memset(buff,0,sizeof()buff);
 			}
 			exit(0);
 		}//if
