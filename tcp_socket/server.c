@@ -67,7 +67,7 @@ int main(int argc , char **argv)
 			{
 				printf("receive:%s",buff);
 				write(connfd , buff , n);
-				memset(buff,0,sizeof()buff);
+				memset(buff,0,sizeof(buff));
 			}
 			exit(0);
 		}//if
